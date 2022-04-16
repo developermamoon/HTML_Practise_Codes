@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form input types</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type text</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"><br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"><br><br>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type password</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Input type Submit</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type reset</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type radio button</legend>
+            <input type="radio" name="web_lang" id="1" value="HTML">
+            <label for="1">HTML</label>
+            <input type="radio" name="web_lang" id="2" value="CSS">
+            <label for="1">CSS</label>
+            <input type="radio" name="web_lang" id="3" value="Javascript">
+            <label for="1">Javascript</label>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type checkbox</legend>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle1" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle1" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type button</legend>
+            <input type="button" value="Click Me" onclick="alert('Hello World!!')">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type color</legend>
+            <input type="color" name="color" id="color">
+            <label for="color">Select color</label>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type Date</legend>
+            <input type="date" name="date" id="date">
+            <label for="date">Select date</label><br><br>
+
+            <input type="datetime-local" name="date" id="date">
+            <label for="date">Select date and time</label><br><br>
+            
+            <input type="datetime" name="date" id="date">
+            <label for="date">Select date</label><br><br>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type Email</legend>
+            <label for="mail">Email id</label>
+            <input type="email" name="email" id="mail">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type File</legend>
+            <label for="file">Choose file here:</label>
+            <input type="file" name="file" id="file">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type Hidden</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type Month</legend>
+            <label for="month">Choose month</label>
+            <input type="month" name="month" id="month">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type Number</legend>
+            <label for="num">Choose a number</label>
+            <input type="number" name="num" id="num"><br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    
+    <form action="">
+        <fieldset>
+            <legend>Input type Range</legend>
+            <label for="range">Input range</label>
+            <input type="range" name="range" id="range"> <br><br>
+            <label for="range">Input range</label>
+            <input type="range" name="range" id="range" min="0" max="20" value="5"> <br><br>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type search</legend>
+            <label for="search">Search Here</label>
+            <input type="search" name="search" id="search"><br><br>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Input type telephone</legend>
+            <label for="tel">Phone no</label>
+            <input type="tel" name="tele" id="tele" required><br><br>
+
+            <label for="tel">Phone no</label>
+            <input type="tel" name="tele" id="tele" required pattern="[0-9]{5}-[0-9]{6}">
+            <p>pattern XXXXX-XXXXXX</p>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Input type time</legend>
+            <label for="time">Enter time</label>
+            <input type="time" name="time" id="time"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Input type URL</legend>
+            <label for="url">Enter url</label>
+            <input type="url" name="url" id="url"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>Input type week</legend>
+            <label for="week">Enter week</label>
+            <input type="week" name="week" id="week"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The Readonly Attribute</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" readonly><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The disabled Attribute</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" disabled><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The size Attribute</legend>
+            <p>The input size attribute specifies the visible width, in characters, of an input field.</p>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" size="3"><br>
+            <label for="pin">Pin no</label><br>
+            <input type="text" id="pin no" name="pin no" size="5"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The maxlength attribute</legend>
+            <p>The input maxlength attribute specifies the maximum number of characters allowed in an input field.</p>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" size="50"><br>
+            <label for="pin">Pin no</label><br>
+            <input type="text" id="pin no" name="pin no" size="5" maxlength="5"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The min and max Attributes</legend>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+          
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The multiple Attribute</legend>
+            <label for="text">select multiple file</label>
+            <input type="file" name="file" id="file" multiple><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The placeholder Attribute</legend>
+            <label for="fname">Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Your first name here"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The required Attribute</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The step Attribute</legend>
+            <label for="points">Points:</label>
+            <input type="number" id="points" name="points" step="3"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The autofocus Attribute</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" autofocus><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The height and width Attributes</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="image" src="submit.png" alt="Submit" width="150" height="48"><br><br>
+        </fieldset>
+    </form>
+
+
+    <form action="">
+        <fieldset>
+            <legend>The list Attribute</legend>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br><br>
+        </fieldset>
+    </form>
+
+    
+    <form action="" autocomplete="on">
+        <fieldset>
+            <legend>The autocomplete Attribute</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off"><br><br>
+            <input type="submit" value="Submit"><br><br>
+        </fieldset>
+    </form>
+</body>
+</html>

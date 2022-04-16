@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <h1>Text Fields</h1>
+        
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" value="Al-Mamoon"><br>
+
+        <h1>Radio Buttons</h1>
+            <input type="radio" name="web_language" id="1" value="HTML">
+            <label for="1">HTML</label>
+            <input type="radio" name="web_language" id="2" value="CSS">
+            <label for="2">CSS</label>
+            <input type="radio" name="web_language" id="3" value="Javascript">
+            <label for="2">Javascript</label>
+
+        <h1>Checkbox</h1>
+            <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+            <label for="vehicle1">Bike</label>
+            <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+            <label for="vehicle2">Car</label>
+            <input type="checkbox" name="vehicle3" id="vehicle3" value="Cycle">
+            <label for="vehicle3">Cycle</label>
+
+        <h1>The Submit Button</h1>
+            <input type="submit" value="submit">
+
+        <h1>The select Element</h1>
+            <label for="cars">Select Cars:</label>
+            <select name="cars" id="cars">
+                <option value="Volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes" selected>Mercedes</option>
+                <option value="Vox Wagen">VoxWagen</option>
+            </select>
+
+        <h1>Visible Values:</h1>
+            <label for="cars">Select Cars:</label>
+            <select name="card" id="cars" size="3">
+                <option value="Volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes" selected>Mercedes</option>
+                <option value="Vox Wagen">VoxWagen</option>
+            </select>
+
+        <h1>Visible Values multiple:</h1>
+            <label for="cars">Select Cars:</label>
+            <select name="card" id="cars" size="3" multiple>
+                <option value="Volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes" selected>Mercedes</option>
+                <option value="Vox Wagen">VoxWagen</option>
+            </select>
+
+        <h1>Datalist</h1>
+            <input list="datalist">
+            <datalist id="datalist">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+            </datalist>
+
+        <h1>Text Area</h1>
+            <textarea name="Comment_box" id="1" cols="30" rows="10"></textarea>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+    </form>
+
+
+    <h1>The fieldset and legend elements</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+</body>
+</html>
